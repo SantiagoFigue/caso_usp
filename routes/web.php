@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PdfController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-
+Route::get('/generatepdf', [PdfController::class, 'pdf'])->name('downloadpdf');
 Route::get('{any}', function(){
     return view('app');
 })->where('any', '.*');

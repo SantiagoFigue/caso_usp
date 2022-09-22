@@ -1,6 +1,7 @@
 <template>
     <div class="row">
         <div class="col-lg-12 mb-4">
+            <a href="/generatepdf" class="btn btn-success">Generar Reporte</a>
             <router-link :to='{name:"crearProducto"}' class="btn btn-success"> Agregar Producto </router-link>
         </div>
         <div class="col-12">

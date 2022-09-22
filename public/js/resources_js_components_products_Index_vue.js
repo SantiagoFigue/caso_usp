@@ -89,7 +89,12 @@ var render = function render() {
     staticClass: "row"
   }, [_c("div", {
     staticClass: "col-lg-12 mb-4"
-  }, [_c("router-link", {
+  }, [_c("a", {
+    staticClass: "btn btn-success",
+    attrs: {
+      href: "/generatepdf"
+    }
+  }, [_vm._v("Generar Reporte")]), _vm._v(" "), _c("router-link", {
     staticClass: "btn btn-success",
     attrs: {
       to: {
